@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade {
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards infinite, fade-out 2s 1s ease-out forwards infinite;
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  /* @media screen and (max-width: 780px) {
+    .heading{
+        font-size: 12px;
+    }
+  } */
+
+  @media screen and (max-width: 530px) {
+    .btn{
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        font-size: 1px;
+    }
+    .btn1{
+        font-size: 1rem;
+    }
+  }
+  .btn1:hover{
+     text-decoration: underline;
+  }
